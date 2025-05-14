@@ -10,10 +10,10 @@ function Production() {
           hey visitor, I'm aalam...i am learning development..the
           bio/portfolio is under production, as currently i am figuring out
           designs or you can say i suck at designing...pretty good at back end
-          stuff, i have some cool project which  i wanna show you soon..
+          stuff, i have some cool project which i wanna show you soon..
         </p>
         <div className="text-xl font-semibold">
-          The website is currently in production
+          The website is currently in production...Man at work
         </div>
         <Loader2 className="animate-spin h-8 w-8 text-gray-600" />
         {/*  */}
