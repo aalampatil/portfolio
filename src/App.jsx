@@ -1,31 +1,16 @@
-import React from "react";
-import Header from "./components/Header";
-// import About from "./components/About";
-// import Experience from "./components/Experience";
-// import Projects from "./components/Projects";
-// import Contact from "./components/Contact";
-// import Socials from "./components/Socials";
-// import Resume from "./components/Resume";
-import Production from "./Production/Production";
+import "./App.css"
+import Header from './components/Header/Header'
+import IdCard from './components/IdCard/IdCard'
 
-function App() {
+export default function App() {
   return (
     <>
-     <Production />
-    <div className="scroll-smooth">
-      {/* <Header /> */}
-      {/* <main>
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Socials />
-        <Resume />
-      </main> */}
-    </div>
+    {/* <div className="m-2 p-2 text-center font-bold">My Portfolio website</div> */}
+    <div className="h-full flex">
+      <Header />
+      <IdCard /> 
+    </div> 
+    <div className="m-2 p-2 text-center font-bold h-full">man is at work</div>   
     </>
-     
-  );
+  )
 }
-
-export default App;
