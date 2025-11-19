@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { SlArrowDown, SlArrowRight } from "react-icons/sl";
+import EarlyLifeAndEducation from "../EarlyLifeAndEducation";
+import Career from "../Career";
 
 function Intro() {
+
   return (
     <>
       {/* Main wrapper */}
@@ -18,15 +22,15 @@ function Intro() {
           <p>
             Throughout the career (my 1.5-year-old career), I have worked on
             numerous projects spanning various tech fields, demonstrating
-            expertise in backend stuffs. My work has not been widely
-            recognized yet(but i believe).
+            expertise in backend stuffs. My work has not been widely recognized
+            yet(but i believe).
           </p>
 
           {/* Contents Box */}
           <div className="flex flex-col text-blue-600 mt-6 p-5 border bg-gray-100 rounded-lg shadow-sm w-full md:w-1/2">
             <p className="text-black font-semibold mb-2">Contents</p>
-            <a href="#">1. Early life and education</a>
-            <a href="#">2. Career</a>
+            <a href="#earlyLife">1. Early life and education</a>
+            <a href="#career">2. Career</a>
             <a href="#">3. Skills and expertise</a>
             <a href="#">4. Recognition and awards</a>
             <a href="#">5. Personal life</a>
@@ -77,15 +81,21 @@ function Intro() {
               <tr>
                 <td className="font-semibold border p-2">Website</td>
                 <td className="border p-2 text-blue-700 underline">
-                  <a href="https://aalampatil.netlify.app" target="_blank" rel="noreferrer">
-                    aalampatil.netlify.app
+                  <a
+                    href="https://aalampatil.netlify.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    visit
                   </a>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </div> 
+      <EarlyLifeAndEducation />
+      <Career />
     </>
   );
 }
