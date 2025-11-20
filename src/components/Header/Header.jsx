@@ -1,6 +1,8 @@
 import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
+import { FaInstagram, FaXTwitter, FaGithub } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 
 function Header() {
   return (
@@ -20,7 +22,16 @@ function Header() {
 
         {/* Right Nav */}
         <div className="w-full mr-2 md:max-w-5xl mx-auto flex items-center justify-center md:justify-end gap-4 py-3 font-serif text-[15px]">
-          <p className="text-black hover:underline cursor-pointer">Donate</p>
+          <div className="flex flex-row items-center justify-center">
+            <CiMail />
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=aalampatil001@gmail.com"
+              className="text-black hover:underline cursor-pointer"
+            >
+              Connect
+            </a>
+          </div>
+
           <div className="flex flex-row items-center justify-center">
             <CiUser />
             <p className="text-blue-800 hover:underline cursor-pointer">
@@ -59,7 +70,19 @@ function Header() {
       </div>
 
       <div className="w-full flex flex-col mx-5 p-4 ">
-        <h1 className="text-lg font-bold py-3">Aalam Patil</h1>
+        <div className="flex flex-row items-center justify-start gap-4">
+          <h1 className="text-lg font-bold py-3">Aalam Patil </h1>
+          <a href="https://github.com/aalampatil" title="github">
+            <FaGithub />
+          </a>
+          <a href="https://x.com/aalam_twt" title="x/twitter">
+            <FaXTwitter />
+          </a>
+          <a href="https://instagram/aalam_ig" title="instagram">
+            <FaInstagram />
+          </a>
+        </div>
+
         <hr className="w-full border-b" />
         <p className="text-sm font-thin py-3">
           From Wikipedia, the free encyclopedia

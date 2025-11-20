@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 import {
   EarlyLifeAndEducation,
   Career,
