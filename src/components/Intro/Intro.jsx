@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
-import EarlyLifeAndEducation from "../EarlyLifeAndEducation";
-import Career from "../Career";
+import {
+  EarlyLifeAndEducation,
+  Career,
+  PersonalLife,
+  ExternalLink,
+  References,
+  SkilllsAndExpertise,
+} from "../imports.js";
 
 function Intro() {
-
   return (
     <>
       {/* Main wrapper */}
@@ -93,9 +98,13 @@ function Intro() {
             </tbody>
           </table>
         </div>
-      </div> 
+      </div>
       <EarlyLifeAndEducation />
       <Career />
+      <PersonalLife />
+      <SkilllsAndExpertise />
+      <ExternalLink />
+      <References />
     </>
   );
 }

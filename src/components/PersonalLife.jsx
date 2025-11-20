@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 
-function SkilllsAndExpertise() {
+function PersonalLife() {
   const [show, setShow] = useState(false);
   return (
     <>
@@ -10,7 +10,7 @@ function SkilllsAndExpertise() {
           className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <h1 className="text-lg md:text-xl font-semibold">Skils and Expertise</h1>
+          <h1 className="text-lg md:text-xl font-semibold">Personal Life</h1>
 
           <span className="text-xl">
             {show ? <SlArrowDown /> : <SlArrowRight />}
@@ -31,4 +31,4 @@ function SkilllsAndExpertise() {
   );
 }
 
-export default SkilllsAndExpertise;
+export default PersonalLife;

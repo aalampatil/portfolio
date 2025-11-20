@@ -5,7 +5,7 @@ function Career() {
     const [show, setShow] = useState(false)
   return (
     <>
-      <div id="career" className="w-full mt-4 my-4 border-b pb-3">
+      <div id="career" className="w-full mt-4 my-4 pb-3">
         <div
           className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
           onClick={() => setShow(!show)}
