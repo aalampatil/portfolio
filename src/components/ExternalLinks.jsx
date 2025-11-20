@@ -10,7 +10,7 @@ function ExternalLinks() {
                 className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
                 onClick={() => setShow(!show)}
               >
-                <h1 className="text-lg md:text-xl font-semibold">External Link</h1>
+                <h1 className="text-lg md:text-xl font-semibold">External Links</h1>
       
                 <span className="text-xl">
                   {show ? <SlArrowDown /> : <SlArrowRight />}
