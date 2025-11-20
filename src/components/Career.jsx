@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 
 function Career() {
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(true)
   return (
     <>
       <div id="career" className="w-full mt-4 my-4 pb-3">

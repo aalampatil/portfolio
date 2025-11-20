@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 
-function ExternalLink() {
+function ExternalLinks() {
     const [show, setShow] = useState(false);
   return (
     <>
-       <div id="personal" className="w-full mt-4 my-4 pb-3">
+       <div id="externalLinks" className="w-full mt-4 my-4 pb-3">
               <div
                 className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
                 onClick={() => setShow(!show)}
@@ -31,4 +31,4 @@ function ExternalLink() {
   )
 }
 
-export default ExternalLink
+export default ExternalLinks

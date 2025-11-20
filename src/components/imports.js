@@ -2,7 +2,7 @@ import EarlyLifeAndEducation from "./EarlyLifeAndEducation";
 import Career from "./Career";
 import PersonalLife from "./PersonalLife";
 import SkilllsAndExpertise from "./SkilllsAndExpertise";
-import ExternalLink from "./ExternalLink";
+import ExternalLinks from "./ExternalLinks";
 import References from "./References";
 
 export {
@@ -10,6 +10,6 @@ export {
   Career,
   PersonalLife,
   SkilllsAndExpertise,
-  ExternalLink,
+  ExternalLinks,
   References,
 };

@@ -4,7 +4,7 @@ import {
   EarlyLifeAndEducation,
   Career,
   PersonalLife,
-  ExternalLink,
+  ExternalLinks,
   References,
   SkilllsAndExpertise,
 } from "../imports.js";
@@ -36,11 +36,11 @@ function Intro() {
             <p className="text-black font-semibold mb-2">Contents</p>
             <a href="#earlyLife">1. Early life and education</a>
             <a href="#career">2. Career</a>
-            <a href="#">3. Skills and expertise</a>
+            <a href="#skills">3. Skills and expertise</a>
             <a href="#">4. Recognition and awards</a>
-            <a href="#">5. Personal life</a>
-            <a href="#">6. References</a>
-            <a href="#">7. External links</a>
+            <a href="#personalLife">5. Personal life</a>
+            <a href="#references">6. References</a>
+            <a href="#externalLinks">7. External links</a>
           </div>
         </div>
 
@@ -103,8 +103,8 @@ function Intro() {
       <Career />
       <PersonalLife />
       <SkilllsAndExpertise />
-      <ExternalLink />
       <References />
+      <ExternalLinks />
     </>
   );
 }
