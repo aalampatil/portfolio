@@ -85,7 +85,7 @@ function Intro() {
                 <td className="font-semibold border p-2">Website</td>
                 <td className="border p-2 text-blue-700 underline">
                   <a
-                    href="https://aalampatil.netlify.app"
+                    href="https://x.com/aalam_twt"
                     target="_blank"
                     rel="noreferrer"
                   >
