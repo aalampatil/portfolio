@@ -2,9 +2,9 @@ import {
   EarlyLifeAndEducation,
   Career,
   PersonalLife,
-  ExternalLinks,
-  References,
-  SkilllsAndExpertise,
+  Projects,
+  Blogs,
+  Skills,
 } from "../imports.js";
 
 function Intro() {
@@ -32,13 +32,13 @@ function Intro() {
           {/* Contents Box */}
           <div className="flex flex-col text-blue-600 mt-6 p-5 border bg-gray-100 rounded-lg shadow-sm w-full md:w-1/2">
             <p className="text-black font-semibold mb-2">Contents</p>
-            <a href="#earlyLife">1. Early life and education</a>
-            <a href="#career">2. Career</a>
-            <a href="#skills">3. Skills and expertise</a>
-            <a href="#">4. Recognition and awards</a>
+            <a href="#earlyLife">1. Career & Life Updates</a>
+            <a href="#skills">2. Skills and expertise</a>
+            <a href="#projects">3. Projects</a>
+            <a href="#career">4. Early life and education</a>
+            {/* <a href="#">5. Recognition and awards</a> */}
             <a href="#personalLife">5. Personal life</a>
-            <a href="#references">6. References</a>
-            <a href="#externalLinks">7. External links</a>
+            <a href="#blogs">6. Blogs</a>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ function Intro() {
                 <td className="border p-2">Aug 2024 - present</td>
               </tr>
               <tr>
-                <td className="font-semibold border p-2">Website</td>
+                <td className="font-semibold border p-2">X</td>
                 <td className="border p-2 text-blue-700 underline">
                   <a
                     href="https://x.com/aalam_twt"
@@ -97,12 +97,17 @@ function Intro() {
           </table>
         </div>
       </div>
-      <EarlyLifeAndEducation />
       <Career />
+      <hr />
+      <Skills />
+      <hr />
+      <Projects />
+      <hr />
+      <EarlyLifeAndEducation />
+      <hr />
       <PersonalLife />
-      <SkilllsAndExpertise />
-      <References />
-      <ExternalLinks />
+      <hr />
+      <Blogs />
     </>
   );
 }

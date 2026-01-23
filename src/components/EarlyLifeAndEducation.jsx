@@ -24,10 +24,20 @@ function EarlyLifeAndEducation() {
         {show && (
           <div>
             <p className="px-4 pb-3 text-sm md:text-base text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate iusto est doloribus dolorem obcaecati praesentium natus
-              accusamus odio in consequatur sequi rem corrupti, tenetur ut?
-              Nobis laudantium optio repellat distinctio.
+              <ol className="m-2 p-2">
+                <li className="list-decimal m-1 p-1">
+                  I’m more of a history-minded, “canon event” kind of person who
+                  enjoys collecting and preserving meaningful things.
+                </li>
+                <li className="list-decimal m-1 p-1">
+                  An average PCM student with aspirations to become something
+                  extraordinary.
+                </li>
+                <li className="list-decimal m-1 p-1">
+                  I’ve learnt valuable life lessons along the way—understanding
+                  what to do, and just as importantly, what not to do.
+                </li>
+              </ol>
             </p>
           </div>
         )}

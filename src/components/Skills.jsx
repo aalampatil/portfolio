@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 
-function References() {
+function Skills() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div id="references" className="w-full mt-4 my-4 pb-3">
+      <div id="skills" className="w-full mt-4 my-4 pb-3">
         <div
           className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <h1 className="text-lg md:text-xl font-semibold">References</h1>
+          <h1 className="text-lg md:text-xl font-semibold">Skills-TechStacks</h1>
 
           <span className="text-xl">
             {show ? <SlArrowDown /> : <SlArrowRight />}
@@ -31,4 +31,4 @@ function References() {
   );
 }
 
-export default References;
+export default Skills;

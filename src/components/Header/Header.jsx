@@ -1,7 +1,7 @@
 import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
-import { FaInstagram, FaXTwitter, FaGithub } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 
 function Header() {
@@ -77,6 +77,9 @@ function Header() {
           </a>
           <a href="https://x.com/aalam_twt" title="x/twitter">
             <FaXTwitter />
+          </a>
+          <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGj9OH9UN-l6gAAAZvp7gmQrzgUXIgIT-SBgbJPX8UUCCmZFSc1RE9h9MyPDWgGkNNWwwg8DdQs-RxF5kLqbJw84U-cKgnfcsXl9cC_iNgrEgz-WiUoiBEFLUJLXsjn_qCkIFo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Faalampatil%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" title="linkedin">
+            <FaLinkedin />
           </a>
           <a href="https://instagram/aalam_ig" title="instagram">
             <FaInstagram />
