@@ -19,10 +19,21 @@ function PersonalLife() {
         {show && (
           <div>
             <p className="px-4 pb-3 text-sm md:text-base text-gray-700 leading-relaxed">
-              i have no plans to be in tech, i had some differnt plans, but you know, life don't work like this, it will take you there where it wants you to be, i was confused what to do, one day my friend . indeed a very good friend, recommended me to start developmemnt, he recommended me a course to start with than move foreward, i liked that course it sparked some curiousity..life was on/off for me, it still, so could not focus when i try to move 2 steps further in my life it drags me 4 steps back. 
+              I never planned to be in tech. I had different ideas for my life,
+              but as it often happens, life had its own plans. It led me in
+              directions I didn’t expect. I was confused about what to do next
+              until a close friend—someone I deeply respect—suggested that I try
+              development and recommended a course to get started. That course
+              sparked my curiosity and slowly pulled me into the world of
+              building things.
             </p>
+
             <p className="px-4 pb-3 text-sm md:text-base text-gray-700 leading-relaxed">
-              the broken knowledge is making me stuck in a loop
+              My journey hasn’t been linear. Life has been on and off, and even
+              now it continues to be that way. Whenever I try to move forward,
+              it often feels like I’m pulled back even further. The gaps in my
+              knowledge sometimes leave me stuck in a loop—but I’m aware of it,
+              and I’m working through it, one step at a time.
             </p>
           </div>
         )}

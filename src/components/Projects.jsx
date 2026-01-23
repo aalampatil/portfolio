@@ -10,7 +10,7 @@ function Projects() {
                 className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
                 onClick={() => setShow(!show)}
               >
-                <h1 className="text-lg md:text-xl font-semibold">External Links</h1>
+                <h1 className="text-lg md:text-xl font-semibold">Projets</h1>
       
                 <span className="text-xl">
                   {show ? <SlArrowDown /> : <SlArrowRight />}
@@ -19,7 +19,8 @@ function Projects() {
               {show && (
                 <div>
                   <p className="px-4 pb-3 text-sm md:text-base text-gray-700 leading-relaxed">
-                    Revamping by Projects...Under Construction
+                    Revamping by Projects...,new and cool projects under construction and maintainance,
+                     can visit my <span className="underline bold italic"> <a href="https://github.com/aalampatil">github</a> </span> as of now
                   </p>
                 </div>
               )}
