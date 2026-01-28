@@ -10,15 +10,19 @@ function LatestCommit() {
         className="peer flex items-center gap-2 w-fit h-9 px-3 rounded-md border border-neutral-300 bg-neutral-50 text-xs font-medium text-neutral-800 hover:bg-neutral-100
         transition absolute"
       >
-        <span className="h-2 w-2 rounded-full bg-green-500"></span>
+        <span className="relative flex h-2 w-2">
+          <span className="absolute inline-flex h-full w-full rounded-full bg-green-700 opacity-100 animate-ping"></span>
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
+        </span>
         Latest Commit
       </button>
 
       {/* Card */}
       {open && (
         <div
-          className="mt-2 flex flex-col gap-2 rounded-md border border-neutral-300
-        bg-white p-3 text-xs text-neutral-800 shadow-sm relative top-[-7px] left-[110px] ">
+          className="mt-2 hidden flex-col gap-2 rounded-md border border-neutral-300
+        bg-white p-3 text-xs text-neutral-800 shadow-sm top-[30px] relative md:top-[-7px] md:left-[110px] peer-focus:flex "
+        >
           <p className="text-neutral-600">🔔 New commit pushed</p>
 
           <p>
