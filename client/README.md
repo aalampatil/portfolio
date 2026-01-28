@@ -14,6 +14,3 @@ If you are developing a production application, we recommend using TypeScript wi
 
 api link
 
-fetch("https://api.github.com/users/YOUR_USERNAME/events/public")
-  .then(res => res.json())
- "https://api.github.com/repos/YOUR_USERNAME/YOUR_REPO/commits/main"
