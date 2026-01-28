@@ -10,7 +10,7 @@ function Projects() {
                 className="m-2 p-2 flex flex-row items-center justify-between cursor-pointer"
                 onClick={() => setShow(!show)}
               >
-                <h1 className="text-lg md:text-xl font-semibold">Projets</h1>
+                <h1 className="text-lg md:text-xl font-semibold">Projects</h1>
       
                 <span className="text-xl">
                   {show ? <SlArrowDown /> : <SlArrowRight />}

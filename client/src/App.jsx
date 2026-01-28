@@ -7,7 +7,7 @@ import Intro from "./components/Intro/Intro"
 export default function App() {
   return (
     <>
-    <div>
+    <div className="">
       <Header />
       <Intro /> 
       <Footer />
