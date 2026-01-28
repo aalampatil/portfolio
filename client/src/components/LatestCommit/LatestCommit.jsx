@@ -7,8 +7,8 @@ function LatestCommit() {
 
   const fetchCommit = async () => {
     const serverUrl = import.meta.env.MODE === "production"
-      ? import.meta.env.VITE_LOCAL_URL
-      : import.meta.env.VITE_PRODUCTION_URL;
+      ? import.meta.env.VITE_PRODUCTION_URL 
+      : import.meta.env.VITE_LOCAL_URL ;
     const response = await axios.get(`${serverUrl}/api/commit-details`)
     if(response.data.success) {
       setCommit(response.data.commit)
