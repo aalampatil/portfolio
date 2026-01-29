@@ -4,12 +4,12 @@ import Footer from "./components/Footer/Footer"
 import Header from './components/Header/Header'
 // import IdCard from './components/IdCard/IdCard'
 import Intro from "./components/Intro/Intro"
-import api from "./api/axios"
+import axios from "./api/axios"
 
 export default function App() {
 
   useEffect (() => {
-    api.post("/api/features/update-visitor-count")
+    axios.post("/api/features/update-visitor-count")
   },[])
   return (
     <>
