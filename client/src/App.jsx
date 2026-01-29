@@ -4,12 +4,16 @@ import Footer from "./components/Footer/Footer"
 import Header from './components/Header/Header'
 // import IdCard from './components/IdCard/IdCard'
 import Intro from "./components/Intro/Intro"
-import axios from "./api/axios"
+import axios from "./api/axios.js"
 
 export default function App() {
 
   useEffect (() => {
-    axios.post("/api/features/update-visitor-count")
+    if (!sessionStorage.getItem("visited")) {
+      axios.post("/api/features/update-visitor-count")
+      sessionStorage.setItem("visited", "true");
+    }
+    
   },[])
   return (
     <>

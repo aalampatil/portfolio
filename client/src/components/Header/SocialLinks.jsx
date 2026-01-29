@@ -20,10 +20,7 @@ function SocialLinks() {
   };
 
   useEffect(() => {
-    if (!sessionStorage.getItem("visited")) {
       fetchVisit();
-      sessionStorage.setItem("visited", "true");
-    }
   }, []);
 
   return (
