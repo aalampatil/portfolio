@@ -11,7 +11,7 @@ function SocialLinks() {
 
   const fetchVisit = async () => {
     const response = await axios.get("/api/features/get-visitor-count");
-    console.log(response.data);
+    // console.log(response.data);
     if (response.data.success) {
       setVisit(response.data.visits);
     } else {

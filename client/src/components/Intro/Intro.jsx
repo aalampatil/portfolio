@@ -5,6 +5,7 @@ import {
   Projects,
   Blogs,
   Skills,
+  Previews,
 } from "../imports.js";
 
 function Intro() {
@@ -32,13 +33,13 @@ function Intro() {
           {/* Contents Box */}
           <div className="flex flex-col text-blue-600 mt-6 p-5 border bg-gray-100 rounded-lg shadow-sm w-full md:w-1/2">
             <p className="text-black font-semibold mb-2">Contents</p>
-            <a href="#earlyLife">1. Career & Life Updates</a>
-            <a href="#skills">2. Skills and expertise</a>
-            <a href="#projects">3. Projects</a>
-            <a href="#career">4. Early life and education</a>
-            {/* <a href="#">5. Recognition and awards</a> */}
-            <a href="#personalLife">5. Personal life</a>
-            <a href="#blogs">6. Blogs</a>
+            <a href="#earlyLife">Career & Life Updates</a>
+            <a href="#skills">Skills and expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#career">Early life and education</a>
+            <a href="#personalLife">Personal life</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#previews">Previews</a>
           </div>
         </div>
 
@@ -108,6 +109,8 @@ function Intro() {
       <PersonalLife />
       <hr />
       <Blogs />
+      <hr />
+      <Previews />
     </>
   );
 }

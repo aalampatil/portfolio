@@ -4,6 +4,7 @@ import PersonalLife from "./PersonalLife";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Blogs from "./Blogs";
+import Previews from "./Previews";
 
 export {
   EarlyLifeAndEducation,
@@ -12,4 +13,5 @@ export {
   Skills,
   Projects,
   Blogs,
+  Previews
 };
