@@ -6,9 +6,9 @@ import {
   Blogs,
   Skills,
   Previews,
-} from "../imports.js";
+} from "../Contents/imports";
 
-function Intro() {
+function Introduction() {
   return (
     <>
       {/* Main wrapper */}
@@ -115,7 +115,7 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default Introduction;
 
 // import React from "react";
 

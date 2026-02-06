@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
-import TableRow, { TableRow3 } from "./Table/TableRow";
+import TableRow, { TableRow3 } from "../Table/TableRow";
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -39,10 +39,19 @@ function Projects() {
               </thead>
               <tbody>
                 <TableRow3
-                 td1={<a className="text-blue-700" href="https://wordle-ap.netlify.app/">[Link]</a>}
-                 td2={"wordle-ap"}
-                 td3={"This Wordle-like project was built to learn JWT authentication and OAuth setup. It handles cookies, token refreshing using refresh tokens, forced logout after token expiry, session management, and Google OAuth 2.0 authentication using Passport."}
-                 />
+                  td1={
+                    <a
+                      className="text-blue-700"
+                      href="https://wordle-ap.netlify.app/"
+                    >
+                      [Link]
+                    </a>
+                  }
+                  td2={"wordle-ap"}
+                  td3={
+                    "This Wordle-like project was built to learn JWT authentication and OAuth setup. It handles cookies, token refreshing using refresh tokens, forced logout after token expiry, session management, and Google OAuth 2.0 authentication using Passport."
+                  }
+                />
               </tbody>
             </table>
           </div>
