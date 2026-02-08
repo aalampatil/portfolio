@@ -33,14 +33,10 @@ function Career() {
               </thead>
               <tbody>
                 <TableRow
-                  td1={"July 2023 – Aug 2024"}
+                  td1={"2024"}
                   td2={
                     "Started learning web development, not consistent, barely giving proper time"
                   }
-                />
-                <TableRow
-                  td1={"2024 – Present"}
-                  td2={"@my-bets - Local Prediction Game"}
                 />
                 <TableRow
                   td1={"2025"}
