@@ -6,7 +6,7 @@ import SocialLinks from "./SocialLinks";
 function Header() {
   return (
     <>
-      <TopNavigationBar />
+      {/* <TopNavigationBar /> */}
       <WikipediaLogo />
       <SocialLinks />
     </>
