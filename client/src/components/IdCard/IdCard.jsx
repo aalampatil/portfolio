@@ -31,7 +31,7 @@ export default function IdCard() {
       camera={{ position: [0, 0, 13], fov: 25 }}
       style={{
         background: "transparent",
-        width: "50vw",
+        width: "70vw",
         height: "100vh",
       }}
       gl={{ alpha: true }}
