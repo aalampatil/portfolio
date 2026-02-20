@@ -1,4 +1,3 @@
-import React from "react";
 import { FaInstagram, FaXTwitter, FaGithub, FaLinkedin } from "react-icons/fa6";
 import LatestCommit from "../LatestCommit/LatestCommit";
 import { useEffect } from "react";
@@ -26,7 +25,15 @@ function SocialLinks() {
     if (cachedVisits) {
       setVisit(JSON.parse(cachedVisits));
     }
-    fetchVisit();
+    const loadVisits = async () => {
+      try {
+        await fetchVisit();
+      } catch (error) {
+        console.error("Failed to fetch visits:", error);
+      }
+    };
+
+    loadVisits();
   }, []);
 
   return (
@@ -68,3 +75,37 @@ function SocialLinks() {
 }
 
 export default SocialLinks;
+
+/*
+
+apparently this one is better
+
+useEffect(() => {
+  let isMounted = true;
+
+  const cachedVisits = localStorage.getItem("visits");
+  if (cachedVisits) {
+    setVisit(JSON.parse(cachedVisits));
+  }
+
+  const loadVisits = async () => {
+    try {
+      const response = await axios.get("/api/features/get-visitor-count");
+
+      if (response.data.success && isMounted) {
+        localStorage.setItem("visits", JSON.stringify(response.data.visits));
+        setVisit(response.data.visits);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  loadVisits();
+
+  return () => {
+    isMounted = false;
+  };
+}, []);
+
+*/

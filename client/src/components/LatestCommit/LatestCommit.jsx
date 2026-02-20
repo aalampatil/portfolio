@@ -24,7 +24,16 @@ function LatestCommit() {
     if (cached) {
       setCommit(JSON.parse(cached));
     }
-    fetchCommit();
+
+    const loadCommits = async () => {
+      try {
+        await fetchCommit();
+      } catch (error) {
+        console.error("Failed to fetch commits:", error);
+      }
+    };
+
+    loadCommits();
   }, []);
 
   return (
@@ -62,14 +71,15 @@ function LatestCommit() {
 
           <p>
             <span className="font-medium text-neutral-500">Date:</span>{" "}
-            <span className="font-mono">{new Date(commit.date).toLocaleString()}</span>
+            <span className="font-mono">
+              {new Date(commit.date).toLocaleString()}
+            </span>
           </p>
 
           <a
             href={`https://github.com/${commit.repoName}`}
             target="_blank"
             rel="noopener noreferrer"
-            
             className="mt-1 w-fit text-blue-600 hover:underline font-medium"
           >
             View on GitHub →
