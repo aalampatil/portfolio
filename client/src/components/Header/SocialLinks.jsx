@@ -13,6 +13,7 @@ function SocialLinks() {
     const response = await axios.get("/api/features/get-visitor-count");
     // console.log(response.data);
     if (response.data.success) {
+      localStorage.setItem("visits", JSON.stringify(response.data.visits));
       setVisit(response.data.visits);
     } else {
       throw new Error("failed to fetch visit");
@@ -20,7 +21,12 @@ function SocialLinks() {
   };
 
   useEffect(() => {
-      fetchVisit();
+    const cachedVisits = localStorage.getItem("visits");
+
+    if (cachedVisits) {
+      setVisit(JSON.parse(cachedVisits));
+    }
+    fetchVisit();
   }, []);
 
   return (

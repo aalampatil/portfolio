@@ -13,7 +13,6 @@ function Skills() {
           <h1 className="text-lg md:text-xl font-semibold">
             Skills-TechStacks
           </h1>
-
           <span className="text-xl">
             {show ? <SlArrowDown /> : <SlArrowRight />}
           </span>
