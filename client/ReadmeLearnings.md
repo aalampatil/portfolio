@@ -1,11 +1,10 @@
-this file is to note the learnings while working on this project
+# This file is to note the learnings while working on this project
 
 ### 20 Feb
 
-## learnt a better way for an api call to handle error, this will avoid memory leak in case of a failed req or an unhandles promise req
+## API-CALLS learnt a better way for an api call to handle error, this will avoid memory leak in case of a failed req/umountes request or an unhandles promise req
 
-`
-useEffect(() => {
+```useEffect(() => {
 let isMounted = true;
 
 const cachedVisits = localStorage.getItem("visits");
@@ -33,4 +32,4 @@ return () => {
 isMounted = false;
 };
 }, []);
-`
+```
